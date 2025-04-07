@@ -1,0 +1,1 @@
+# testovanie-sw-e2e-2025
