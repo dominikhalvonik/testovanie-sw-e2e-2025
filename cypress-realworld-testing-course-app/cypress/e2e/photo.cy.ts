@@ -10,7 +10,7 @@ describe('Kontrola navigácie na UKF.sk', () => {
       cy.get('#crossukf > li:first-child a').then(($el) => {
           const text = $el.text().trim();
           if (text !== 'UKF.skk') {
-              cy.log('Text sa nezhoduje, ukladám screenshot...');
+              cy.log('Text sa zobrazuje, ukladám screenshot...');
               cy.screenshot('navukf_warning');
           }
           expect(text).to.eq('UKF.sk'); // toto vyvolá chybu a screenshot, ak treba
